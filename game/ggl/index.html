@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+	<title>刮刮乐</title>
+	<link href="assets/css/activity-style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/underscore/underscore-min.js"></script>
+	<script type="text/javascript" src="assets/js/wScratchPad.js"></script>
+	<script type="text/javascript" src="assets/js/alert.js"></script>
+	<script type="text/javascript" src="assets/js/ggl.js"></script>
+
+</head>
+<body data-role="page" class="activity-scratch-card-winning">
+	<div class="main">
+		<div class="cover">
+			<img src="assets/images/activity-scratch-card-bannerbg.png">
+			<div id="prize">
+			</div>
+			<div id="scratchpad">
+			</div>
+		</div>
+		<div class="content">
+			<div id="ggl" style="display:none" class="boxcontent boxwhite">
+				<div class="box">
+					<div class="title-red" style="color: #444444;">
+						<span>恭喜你</span>
+					</div>
+					<div class="Detail">
+						<p>你中了：<span class="red" id ="theAward"></span></p>
+						<p>兑奖SN码：<span class="red" id="sncode"></span></p>
+						<p class="red"></p>
+					</div>
+				</div>
+			</div>
+			<script type="text/template" id="ggl_tpl">
+				<div class="boxcontent boxwhite">
+					<div class="box">
+						<div class="title-brown"><span>奖项设置：</span></div>
+						<div class="Detail">
+							<%_.each(act.prize, function(item){%>
+							<p><%item.title%>---<%=item.awardname%> ---奖品数量：<%=item.num%></p>
+							<%});%>
+						</div>
+					</div>
+				</div>
+				<div class="boxcontent boxwhite">
+					<div class="box">
+						<div class="title-brown">活动说明：</div>
+						<div class="Detail"><p class="red"><%=act.content%></p></div>
+					</div>
+				</div>
+				<%if(act.prizelog.length >0){%>
+				<div class="boxcontent boxwhite">
+					<div class="box">
+						<div class="title-brown"><span>中奖记录：</span></div>
+						<div class="Detail">
+							<%_.each(act.prizelog, function(item){%>
+								<p><%=item.uname%>---<%=item.awardname%></p>
+							<%})%>
+						</div>
+					</div>
+				</div>
+				<%}%>
+				<%if(act.myprizelog.length > 0){%>
+				<div class="boxcontent boxwhite">
+					<div class="box">
+						<div class="title-brown"><span>我的中奖记录：</span></div>
+						<div class="Detail">
+							<p>兑奖截止<%=act.endtime%></p>
+							<%_.each(act.myprizelog, function(item){%>
+								<p><%=item.uname%>---<%=item.awardname%></p>
+							<%})%>
+						</div>
+					</div>
+				</div>
+				<%}%>
+			</script>
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+</body>
+</html>
