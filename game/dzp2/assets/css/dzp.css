@@ -1,0 +1,123 @@
+*{padding: 0; margin: 0;}
+body{ background:url(../images/bg.png);}
+.grid{ width: 320px; margin: 0 auto; position: relative; overflow: hidden;}
+#banner{
+	width:270px;
+	height: 270px;
+	background: url(../images/1.png) no-repeat;
+	-webkit-background-size: 270px auto;
+	background-size: 270px auto;
+	overflow: hidden;
+	margin: 0 auto;
+	position:relative;
+  }
+#banner .inner{
+	height: 255px;
+	width: 255px;
+	background:url(../images/2.png);
+	margin: 0 auto;
+	-webkit-background-size: 255px auto;
+	background-size: 255px auto;
+	position: relative;
+}
+
+#banner #zhen{
+	height: 224px;
+	width: 112px;
+	position: absolute;
+	left: 50%;
+	top: 15px;
+	margin-left: -56px;
+	background: url(../images/3.png);
+}
+
+
+.block{
+	background-color: #FFF9B3;
+	border: 2px solid #306931;
+	margin:0 10px 10px 10px;
+	border-radius: 8px;
+	padding: 8px;
+	position: relative;
+	font-size: 12px;
+}
+.block .title{
+	font-size: 16px;
+	line-height: 24px;
+	background:url(../images/tit.png) no-repeat;
+	padding-left: 7px;
+	width: 123px;
+	color: #fff;
+	height: 24px;
+	-webkit-background-size: 123px auto;
+	background-size: 123px auto;
+}
+.block p{
+	line-height: 22px;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+
+#mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	background: rgba(0,0,0,.4);
+	display: none;
+}
+#dialog{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 100px;
+	width: 276px;
+	margin-left: -150px;
+	margin-top: -50px;
+
+	border: 2px solid #306931;
+	padding: 10px;
+	background-color: #fff;
+	display: none;
+	z-index: 6;
+	font-weight: bold;
+	font-size: 20px;
+}
+#dialog.yes{
+	color: #900;
+	background-image: url(../images/y.png);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	-webkit-background-size:100px auto ;
+	background-size:100px auto ;
+}
+#dialog.yes a{ display: block;}
+
+#dialog.no{ color: #333;}
+#dialog.no button{ display: block;}
+#content{
+	text-align: center;
+}
+#dialog button,#dialog a{
+	display: none;
+	font-size: 14px;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	height: 30px;
+	width: 80px;
+	line-height: 30px;
+	margin-left: -40px;
+	background-color: #2C6C4E;
+	border: none;
+	color: #fff;
+	text-align: center;
+}
+
+li{ list-style: none; font-size: 14px; line-height: 30px;}
+
+.jilu{ height: 30px; width: 100%; overflow: hidden; background-color: #eee; }
+.jilu li{ height: 30px; line-height: 30px; text-align: center;}

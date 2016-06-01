@@ -52,7 +52,11 @@ var paomadeng={
 	showPrize:function(){
         clearInterval(paomadeng.roll);
 		setTimeout(function(){
-			alert(paomadeng.txt);
+			if(typeof paomadeng.gameover == 'function'){
+                paomadeng.gameover();
+            }else{
+                alert(paomadeng.txt);
+            }
 			paomadeng.btn.show();
 		},700);
         clearInterval();
