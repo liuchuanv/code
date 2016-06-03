@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/bootstrap-responsive.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/style.css" />
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.sorted.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/bootstrap.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/ckform.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/common.js"></script>
+
+    <style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+        .sidebar-nav {
+            padding: 9px 0;
+        }
+
+        @media (max-width: 980px) {
+            /* Enable use of floated navbar text */
+            .navbar-text.pull-right {
+                float: none;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<form class="form-inline definewidth m20" action="{:U('Order/index', array('status'=>$status))}" method="get">
+    用户名：
+    <input type="text" name="uname" class="abc input-default" placeholder="" value="{$uname}">&nbsp;&nbsp;
+    <button type="submit" class="btn btn-primary">查询</button>
+</form>
+<table class="table table-bordered table-hover definewidth m10">
+    <thead>
+    <tr>
+        <th>订单编号</th>
+        <th>用户</th>
+        <th>收货人</th>
+        <th>电话</th>
+        <th>收货地址</th>
+        <th>订单类型</th>
+        <th>预定时间</th>
+        <th>下单时间</th>
+        <th>总价</th>
+        <th>管理操作</th>
+    </tr>
+    </thead>
+    <tbody>
+        <volist name="list" id="vo">
+        <tr>
+            <td>{$vo.order_no}</td>
+            <td>{$vo.uname}</td>
+            <td>{$vo.contact}</td>
+            <td>{$vo.phone}</td>
+            <td>{$vo.address}</td>
+            <td>{$vo.order_type}</td>
+            <td>{$vo.book_time}</td>
+            <td>{$vo.add_time}</td>
+            <td>{$vo.total_money}</td>
+            <td>
+                <a href="{:U('Order/detail', array('id'=>$vo['id']))}">详情</a>
+            </td>
+        </tr>
+        </volist>
+    </tbody>
+</table>
+{$page}
+</body>
+</html>

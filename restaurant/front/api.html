@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+	<title>接口api测试</title>
+	<script src="js/jquery.min.js"></script>  
+	<script src="js/zxxFile.js"></script>
+	<style>h5{padding:0;margin:15px 0 5px;line-height:1.5em;}button{padding:4px;}</style>
+	<script>
+		var apiUrl = "http://liuc.nat123.net/dev/restaurant/index.php/Api/";
+		$(function(){
+			$("#verifyimg").click(function(){
+				$(this).attr("src", apiUrl + "User/getPicCode?" + Math.random());
+			});
+		});
+		
+		/** 验证码模块 **/
+		function checkVerify(){
+			var param = {
+				"picCode"	:	$("#verify").val(),
+			};
+			$.post(apiUrl + "User/checkPicCode", param, function(data){
+				writeTextArea(data);
+			});
+		}
+		function sendSmsCode(){
+			var param = {
+				"phone"	:	"13687657303",
+				"smsCodeType"	: "1"
+			};
+			$.post(apiUrl + "User/sendSmsCode", param, function(data){
+				writeTextArea(data);
+			});
+		}
+		
+		/** 用户模块 **/
+		function checkPhone(){
+			var param = {
+				"phone"		:	"1505320360"
+			};
+			$.post(apiUrl+"User/checkUniquePhone", param, function(data){
+				writeTextArea(data);
+			});
+		}
+		function register(){
+			$.post(apiUrl + "User/register", {"phone" : "13687657303", "smsCode" : "477859"}, function(data){
+				writeTextArea(data);
+			});
+		}
+		function loginByUname(){
+			var param = {
+				"loginWay"	:	"1",
+				"uname"		:	"1505320",
+				"password"	:	"abcdef"
+			};
+			$.post(apiUrl+"User/login", param, function(data){
+				writeTextArea(data);
+			});
+		}
+		function loginByPhone(){
+			$.post(apiUrl+"User/login", {"loginWay":"2","phone":"13687657303", "smsCode":"477859"}, function(data){
+				writeTextArea(data);
+			});
+		}
+		function updateUserInfo(){
+			var param = {
+				"userId"	:	"2",
+				"email"		:	"1730060902@qq.com",
+				"uname"		:	"liuc",
+				"sex"		:	"1",
+				"age"		:	"34",
+				"password"	:	"abcdef",
+				"oldPassword" : "123456",
+				"phone"		:	"13687657303",
+				"smsCode"	:	"477859"
+			};
+			
+			$.post(apiUrl+"User/update", param, function(data){
+				writeTextArea(data);
+			});
+		}
+		
+		
+		/** 商品模块 **/
+		function getGoodsList(){
+			$.post(apiUrl + "Food/getFoodList", {"catId" : 2}, function(data){
+				writeTextArea(data);
+			});
+		}
+		
+		/** 订单模块 **/
+		function getExtraInfo(){
+			$.post(apiUrl + "Order/extraInfo", {"total_money" : "20"}, function(data){
+				writeTextArea(data);
+			});
+		}
+		function detail(){
+			$.post(apiUrl + "Order/extraInfo", {"total_money" : "20"}, function(data){
+				writeTextArea(data);
+			});
+		}
+		
+		function submitOrder(){
+			var foods = [{"food_id":"18", "amount":"1"}, {"food_id":"4", "amount":"20"} ];
+			console.log(JSON.stringify(foods));
+			
+			var param = {
+				"foods"				: foods,
+				"book_time" 		: "2016-05-01 19:40:00",
+				"order_type"		: "2",
+				"accept_address_id"	: "1",
+				"user_id"			: "1",
+				"remark"			: "51郑宪春刘引原涛回青岛聚"
+			};
+			$.post(apiUrl + "Order/submitOrder", param, function(data){
+				writeTextArea(data);
+			});
+		}
+		function getOrderList(){
+			$.post(apiUrl+"Order/getOrderList", {"userId" : "1"}, function(data){
+				writeTextArea(data);
+			});
+		}
+		
+		/**收货地址模块**/
+		function getAcceptAddress(){
+			$.post(apiUrl + "AcceptAddress/get", {"userId" : "1"}, function(data){
+				writeTextArea(data);
+			});
+		}
+		function addAcceptAddress(){
+			var param = {
+				"user_id"	: "1",
+				"phone"		: "15053203610",
+				"address"	: "青岛市北区山东路130号嘉合新兴1号楼1单元2007室",
+				"contact"	: "刘传伟"
+			};
+			$.post(apiUrl + "AcceptAddress/add", param, function(data){
+				writeTextArea(data);
+			});
+		}
+		function updateAcceptAddress(){
+			var param = {
+				"id"		: "1",
+				"user_id"	: "1",
+				"phone"		: "15053203610",
+				"address"	: "青岛市北区山东路130号嘉合新兴1号楼1单元2007室",
+				"contact"	: "刘传伟"
+			};
+			$.post(apiUrl + "AcceptAddress/update", param, function(data){
+				writeTextArea(data);
+			});
+		}
+		function delAcceptAddress(){
+			$.post(apiUrl + "AcceptAddress/del", {"id" : "1"}, function(data){
+				writeTextArea(data);
+			});
+		}
+		
+		/** 配置信息 **/
+		function getSyscfg(){
+			$.post(apiUrl + "Shop/syscfg", {"id" : "notice"}, function(data){
+				writeTextArea(data);
+			});
+		}
+		
+		/************************************/
+        function writeTextArea(data){
+			var str = JSON.stringify(data);
+            $("#resp").text(str);
+            console.log(data);
+        }
+	</script>
+</head>
+
+<body>
+	<h5>验证码</h5>
+	<img src="" id="verifyimg" width="100" height="38" title="图形验证码"/><input type="text" id="verify" />
+	<button type="button" onclick="checkVerify()">验证图形码</button>
+	<button type="button" onclick="sendSmsCode()">发送短信验证码</button>
+	
+	<h5>用户</h5>
+	<button type="button" onclick="checkPhone()">验证手机号</button>
+	<button type="button" onclick="register()">注册</button>
+	<button type="button" onclick="loginByUname()">用户名密码登录</button>
+	<button type="button" onclick="loginByPhone()">手机号短信验证码登录</button>
+	<button type="button" onclick="updateUserInfo()">用户信息更新</button>
+	
+	<h5>商品</h5>
+	<button type="button" onclick="getGoodsList()">(分页)商品列表</button>
+	
+	<h5>公告</h5>
+	<button type="button" onclick="getShopNotice()">手机验证码</button>
+	
+	<h5>订单</h5>
+	<button type="button" onclick="getExtraInfo()">订单额外信息</button>
+	<button type="button" onclick="submitOrder()">提交订单</button>
+	<button type="button" onclick="getOrderList()">(分页)订单列表</button>
+	
+	<h5>收货地址</h5>
+	<button type="button" onclick="getAcceptAddress()">收货地址列表</button>
+	<button type="button" onclick="addAcceptAddress()">添加收货地址</button>
+	<button type="button" onclick="updateAcceptAddress()">修改收货地址</button>
+	<button type="button" onclick="delAcceptAddress()">删除收货地址</button>	
+	
+	<h5>配置信息</h5>
+	<button type="button" onclick="getSyscfg()">配置信息</button>	
+	<h3>上传图片</h3>
+		<button type="button" id="upload">上传</button>	
+		<input type="file" id="select" />
+		<div id="preview"></div>
+		<div id="uploadInf"></div>
+
+    <p>
+        <textarea id="resp" style="width:100%;min-height:200px;" readonly>
+        </textarea>
+    </p>
+	<script>
+		//上传头像
+		var params = {
+			fileInput: $("#select").get(0),
+			upButton: $("#upload").get(0),
+			url: apiUrl + "Common/upload",
+			filter: function(files) {
+				var arrFiles = [];
+				for (var i = 0, file; file = files[i]; i++) {
+					if (file.type.indexOf("image") == 0) {
+						if (file.size >= 512000) {
+							alert('您这张"'+ file.name +'"图片大小过大，应小于500k');	
+						} else {
+							arrFiles.push(file);	
+						}			
+					} else {
+						alert('文件"' + file.name + '"不是图片。');	
+					}
+				}
+				return arrFiles;
+			},
+			onSelect: function(files) {
+				var html = '', i = 0;
+				$("#preview").html('<div class="upload_loading"></div>');
+				var funAppendImage = function() {
+					file = files[i];
+					if (file) {
+						var reader = new FileReader()
+						reader.onload = function(e) {
+							html = html + '<div id="uploadList_'+ i +'" class="upload_append_list"><p><strong>' + file.name + '</strong>'+ 
+								'<a href="javascript:" class="upload_delete" title="删除" data-index="'+ i +'">删除</a><br />' +
+								'<img id="uploadImage_' + i + '" src="' + e.target.result + '" class="upload_image" /></p>'+ 
+								'<span id="uploadProgress_' + i + '" class="upload_progress"></span>' +
+							'</div>';
+							
+							i++;
+							funAppendImage();
+						}
+						reader.readAsDataURL(file);
+					} else {
+						$("#preview").html(html);
+						if (html) {
+							//删除方法
+							$(".upload_delete").click(function() {
+								ZXXFILE.funDeleteFile(files[parseInt($(this).attr("data-index"))]);
+								return false;	
+							});
+							//提交按钮显示
+							$("#fileSubmit").show();	
+						} else {
+							//提交按钮隐藏
+							$("#fileSubmit").hide();	
+						}
+					}
+				};
+				funAppendImage();		
+			},
+			onDelete: function(file) {
+				$("#uploadList_" + file.index).fadeOut();
+			},
+			onSuccess: function(file, response) {
+				$("#uploadInf").append("<p>上传成功，图片地址是：" + response + "</p>");
+			},
+			onFailure: function(file) {
+				$("#uploadInf").append("<p>图片" + file.name + "上传失败！</p>");	
+				$("#uploadImage_" + file.index).css("opacity", 0.2);
+			},
+		}
+		ZXXFILE = $.extend(ZXXFILE, params);
+		ZXXFILE.init();
+	</script>
+</body>
+</html>

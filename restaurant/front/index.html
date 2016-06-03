@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>外卖网站</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/index.css" />
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/underscore.js"></script>
+	<script src="js/base.js"></script>
+	<!-- 导航定位 -->
+	<script src="js/jquery-plugin.js"></script>
+	<!-- 抛物线 -->
+	<script src="js/parabola/parabola.js"></script>
+	<script src="js/parabola/parabola-box.js"></script>
+	<!-- 商品数量加减按钮 -->
+	<script src="js/jquery.spinner/jquery.spinner.js"></script>
+	
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<!-- 顶部 -->
+		<div class="hd-top clearfix">
+			<div class="container clearfix">
+				<span class="fl">
+					<i class="iconfont">&#xe600;</i>
+					青岛
+					<a href="#">[切换地址]</a>
+				</span>
+				<span class="fr info">
+					<a href="login.html">登录/注册</a>
+				</span>
+			</div>
+		</div>
+			
+		<!-- logo和搜索框 -->
+		<div class="hd-logo-search">
+			<div class="container clearfix">
+				<div class="logo fl">
+					<a href="#"><img src="img/logo.png" /></a>
+				</div>
+				<div class="search fr">
+					<form action="">
+						<span class="search-box">
+							<input type="text" name=""/>
+						</span>
+						<span class="btn-search">搜索</span> 
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //头部 -->
+	
+	<!-- 主体 -->
+	<div class="main">
+		<div class=" container clearfix">
+			<!-- 左边 -->
+			<div class="mn-left fl">
+				<!-- 导航栏 -->
+				<div class="lf-nav clearfix">
+					<ul>
+						
+					<ul>
+				</div>
+				<div class="lf-content">
+					<!-- 楼层商品 -->	
+				</div>	<!-- //lf-content -->
+			</div>
+			
+			<!-- 右边 -->
+			<div class="mn-right fr">
+				<!-- 右上 -->
+				<div class="rt-up">
+					<div class="shop-notice">
+						<h3>店铺公告</h3>
+						<p class="main-notice">	<!-- data --></p>
+						<p class="second-notice">
+						可使用支付宝、微信、手机QQ进行在线支付
+						</p>
+						<a href="">意见反馈</a>
+					</div>
+				</div>
+				
+				<!-- 右下 -->
+				<div class="rt-below">
+					<div class="shopcart">
+						<div class="shopcart-basket" id="basket" style="top: -48px;">
+							<div class="basket-title">
+								购物车
+								<a href="javascript:void(0)">[清空]</a>
+							</div>
+						</div>
+						<div class="shopcart-footer clearfix">
+							<div class="compute">
+								<span id="icon-cart" class="icon-cart" data-icon="&#xe602;">
+									<span class="cart-goods-quantity">0</span>
+								</span>
+								<span class="total-money" data-icon="&#xe603;">0</span>
+								<span class="deliver-fee"></span>
+							</div>
+							<a class="topay btn" href="javascript:void(0)">
+								去结算 >
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //主体 -->
+	
+	<!-- 脚部 -->
+	<div class="footer">
+		
+	</div>
+	<!-- //脚部 -->
+	
+	<!-- 飞入购物车动画图片容器 -->
+	<div id="flyItem" class="fly_item">
+		<img src="" width="20" height="20">
+	</div>
+	
+	<!-- 楼层商品模板 -->
+	<script type="text/template" id="foodTpl">
+		<% for(var index=0; index<data.length; index++){ %>
+			<% var item = data[index]; %>
+			<div id="f<%=index%>" class="shopmenu">
+				<h3 class="shopmenu-title"><%=item.title%></h3>
+				<div class="shopfood-list clearfix">
+					<!-- 商品 -->
+					<%_.each(item.foodList, function(food){%>
+					<div class="shopfood" data-foodid="<%=food.id%>">
+						<div class="col-1">
+							<img src="<%= imgUrl + food.img_url%>" />
+						</div>
+						<div class="col-2">
+							<h3><%=food.title%></h3>
+							<p>
+								<span></span>
+								<span>月售xx</span>
+							</p>
+							<span class="foodprice">
+								<i class="iconfont">&#xe603;</i>
+							<%=food.price%></span>
+						</div>
+						<span class="col-3">
+							<span class="btn-circle addcart">加入购物车</span>
+							<span class="addsub"></span>
+						</span>
+					</div>
+					<% }) %>
+				</div><!-- //shopfood-list -->
+			</div><!-- // shopmenu -->
+		<% } %>
+	</script>
+	
+	<!-- 导航模板 -->
+	<script type="text/template" id="navTpl">
+		<% for(var index=0; index<data.length; index++){ %>
+			<li><a href="#f<%=index%>"><%=data[index].title%></a></li>
+		<% } %>
+	</script>
+	
+	<script type="text/template" id="userTpl">
+		欢迎你，<%=user.uname%>
+		<ul class="hide">
+			<li><a href="./user_center.html#0" data-icon="&#xe606;"> 个人中心</a></li>
+			<li><a href="./user_center.html#1" data-icon="&#xe608;"> 我的订单</a></li>
+			<li><a href="./user_center.html#2" data-icon="&#xe600;"> 收货地址</a></li>
+			<li><a href="javascript:void(0)" id="quit">退出登录</a></li>
+		</ul>
+	</script>
+</body>
+</html>

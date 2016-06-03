@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/bootstrap-responsive.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/style.css" />
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.sorted.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/bootstrap.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/ckform.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/common.js"></script>
+    <script type="text/javascript"   src="__PUBLIC__/uploadify/jquery.uploadify.min.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/uploadify/uploadify.css">
+
+    <style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+        .sidebar-nav {
+            padding: 9px 0;
+        }
+
+        @media (max-width: 980px) {
+            /* Enable use of floated navbar text */
+            .navbar-text.pull-right {
+                float: none;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<form action="__ROOT__/index.php/Admin/Food/{$act}" method="post" class="definewidth m20">
+    <input type="hidden" name="id" value="{$item.id}" />
+    <table class="table table-bordered table-hover ">
+        <tr>
+            <td width="10%" class="tableleft">菜品名称</td>
+            <td><input type="text" name="title" value="{$item.title}"/></td>
+        </tr>
+        <tr>
+            <td width="10%" class="tableleft">菜品分类</td>
+            <td>
+                <select name="cat_id" style="width:210px">
+                    <volist name="catList" id="cvo">
+                        <option value="{$cvo.id}">{$cvo.title}</option>
+                    </volist>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td width="10%" class="tableleft">价格</td>
+            <td><input type="text" name="price" value="{$item.price}"/></td>
+        </tr>
+        <tr>
+            <td width="10%" class="tableleft">图片</td>
+            <td>
+                <img id="img" src="<notempty name='item.img_url'>__ROOT__/{$item.img_url}</notempty>" width="200" height="130"/>
+                <input type="hidden" name="img_url" id="img_url" value="{$item.img_url}">
+                <input id="file_upload" name="file_upload" type="file" multiple="true" value="" />
+            </td>
+        </tr>
+        <tr>
+            <td class="tableleft">是否上架</td>
+            <td>
+                <input type="radio" name="is_show" value="1" <notempty name="item.is_show">checked</notempty>/> 上架
+                <input type="radio" name="is_show" value="0" <empty name="item.is_show">checked</empty>/> 下架
+            </td>
+        </tr>
+        <tr>
+            <td class="tableleft">描述</td>
+            <td >
+                <input type="text" name="remark" value="{$item.remark}" />
+            </td>
+        </tr>
+        <tr>
+            <td class="tableleft"></td>
+            <td>
+                <button type="submit" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;
+                <button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
+<script>
+    $(function () {
+        $('#backid').click(function(){
+            window.location.href="{:U('Food/food')}";
+        });
+        //图片上传
+        $('#file_upload').uploadify({
+            'swf': '__PUBLIC__/uploadify/uploadify.swf',
+            'uploader': '{:U("Common/uploadify")}',
+            'buttonText': '图片上传',
+            'onUploadSuccess': function (file, data, response) {
+                $('#img').attr('src', '__ROOT__/Uploads/' + data);
+                $('#img_url').val('Uploads/' + data);
+            }
+        });
+
+    });
+</script>

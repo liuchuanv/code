@@ -1,0 +1,110 @@
+
+.container{
+	width : 70%;
+}
+.header .logo-wrap{
+	padding : 20px 0 10px;
+}
+.main .mn-left {
+	width : 60%;
+}
+.main .mn-left img{
+	float: left;
+    margin: 30px 30px 20px;
+    width: 445px;
+}
+
+.main .mn-right {
+	width : 40%;
+}
+.login-wrap{
+	padding : 20px 30px;
+	background : #f8f8f8;
+	border : 1px solid #ddd;
+}
+.login-head{
+	position : relative;
+}
+.login-head h3{
+	font-size : 1.8em;
+	color: #888;
+    font-weight: 500;
+}
+.login-head a.login-way{
+	position : absolute;
+	right : 0;
+	bottom : 0;
+}
+.login-input{
+	line-height : 40px;
+}
+.login-param{
+	position : relative;
+	margin : 15px 0;
+	border : 1px solid #ddd;
+	background: #fff;
+}
+.login-param input[type='text'], .login-param input[type='password']{
+	border : 0;
+	outline : none;
+	width : 80%;
+	padding-left : 45px;
+	line-height : 36px;
+	font-size : 1.2em;
+}
+.login-param .getVerify{
+	position : absolute;
+	right: 0;
+    bottom: 0;
+    height: 34px;
+    margin: 3px;
+    padding: 0 10px;
+	border: 1px solid #d9d9d9;
+	cursor : pointer;
+}
+.login-param span[data-icon]{
+	position : absolute;
+	font-size : 1.8em;
+	left: 0px;
+    bottom: 0px;
+    background: #f8f8f8;
+    line-height: 38px;
+    padding: 0 8px;
+	color: #777;
+}
+.login-input input[type='checkbox'] {
+	vertical-align : middle;
+	margin-right : 10px;
+}
+.login-input input[type='submit'] {
+    width: 100%;
+    padding: 7px 0;
+    cursor: pointer;
+	border : none;
+	outline : none;
+	background : #06f;
+	font-size : 1.5em;
+	color : #fff;
+	border-radius : 5px;
+}
+/* 另一种登录方式 */
+.shortinput{
+	width : 45%;
+}
+.shortinput input[type="text"]{
+	padding : 0 10px;
+}
+.shortinput img{
+	position : absolute;
+	    right: -110px;
+    bottom: 2px;
+}
+.shortinput a{
+	position : absolute;
+	    right: -160px;
+}
+
+
+.footer{
+	margin-top : 0;
+}

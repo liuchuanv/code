@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/bootstrap-responsive.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/style.css" />
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.sorted.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/bootstrap.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/ckform.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/common.js"></script>
+
+    <style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+        .sidebar-nav {
+            padding: 9px 0;
+        }
+
+        @media (max-width: 980px) {
+            /* Enable use of floated navbar text */
+            .navbar-text.pull-right {
+                float: none;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<form action="__ROOT__/index.php/Admin/Food/{$act}" method="post" class="definewidth m20">
+    <input type="hidden" name="id" value="{$item.id}" />
+    <table class="table table-bordered table-hover ">
+        <tr>
+            <td width="10%" class="tableleft">菜品分类名称</td>
+            <td><input type="text" name="title" value="{$item.title}"/></td>
+        </tr>
+        <tr>
+            <td class="tableleft">是否上架</td>
+            <td>
+                <input type="radio" name="is_show" value="1" <notempty name="item.is_show">checked</notempty>/> 上架
+                <input type="radio" name="is_show" value="0" <empty name="item.is_show">checked</empty>/> 下架
+            </td>
+        </tr>
+        <tr>
+            <td class="tableleft">描述</td>
+            <td >
+                <input type="text" name="remark" value="{$item.remark}" />
+            </td>
+        </tr>
+        <tr>
+            <td class="tableleft"></td>
+            <td>
+                <button type="submit" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;
+                <button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
+<script>
+    $(function () {
+        $('#backid').click(function(){
+            window.location.href="{:U('Food/foodCat')}";
+        });
+
+    });
+</script>

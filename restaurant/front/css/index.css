@@ -1,0 +1,290 @@
+body{
+	background : #f8f8f8;
+}
+.main{
+	padding-top : 20px;
+	font-family : "微软雅黑" Arial;
+}
+.mn-left{
+	width : 75%;
+}
+.lf-nav{
+	padding: 10px 15px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    z-index: 101;
+}
+.lf-nav_fixed{
+	position : fixed;
+	top : 0;
+	z-index : 99999;
+	width : 855px;
+	background-color : #fff;
+	box-shadow: 0 1px 5px 0 rgba(0,0,0,.085);
+}
+.lf-nav ul{
+
+}
+.lf-nav li{
+	float : left;
+	width : 20%;
+	font-size : 1.2em;
+	text-align : center;
+	line-height : 40px;
+}
+.lf-nav li.active{
+	background : #f33;
+}
+.lf-nav li.active a{
+	color : #fff;
+}
+
+.shopmenu{
+	width : 102%;
+}
+.shopmenu-title{
+    padding: 20px 0 10px 20px;
+    font-size: 1.5em;
+	font-weight : normal;
+}
+
+.shopfood{
+    float: left;
+    margin-right: 1.8%;
+	padding-right : 8px;
+	margin-bottom : 12px;
+	border : 1px solid #eee;
+    width: 47%;
+    background-color: #fff;
+	height : 100px;
+	
+	position : relative;
+}
+.shopfood .col-1 img{
+	float: left;
+    margin-right: 15px;
+    width: 100px;
+    height: 100px;
+}
+.shopfood .col-2{
+	margin-left : 115px;
+	position : relative;
+	height : 100%;
+}
+.shopfood .col-2 h3{
+	font-size: 1.3em;
+	color : #333;
+	padding-top : 10px;
+}
+.shopfood .col-2 p{
+	margin-top : 5px;
+	color : #aaa;
+	font-size : 1em;
+}
+.shopfood .col-2 .foodprice{
+	position : absolute;
+	bottom : 8px;
+	color : #f33;
+	font-size : 1.1em;
+	font-weight : 700;
+}
+.shopfood .col-3{
+	position : absolute;
+	bottom : 15px;
+	right : 20px;
+}
+.shopfood .col-3 .addsub{
+	display : none;
+}
+/* 右边 */
+.mn-right{
+	width : 22.5%;
+}
+
+	/* 右上 */
+.rt-up{
+	
+}
+.rt-up .shop-notice{
+	margin-bottom: 20px;
+    border-radius: 2px 2px 0 0;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.12);
+}
+.shop-notice h3{
+	margin-bottom: 1em;
+    padding: 0 1em;
+    line-height: 2.8em;
+    background-color: #000;
+	font-size : 1.3em;
+    color: #fff;
+}
+.shop-notice .main-notice{
+	padding: 0 15px 20px;
+    line-height: 2;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #ccc;
+}
+.shop-notice .second-notice{
+	padding: 0 15px;
+    overflow: hidden;
+	margin-bottom: 10px;
+    padding-left: 30px;
+}
+.shop-notice a{
+    display: block;
+    line-height: 3;
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    border-top: 1px solid #eee;
+}
+	/* 右下 */
+.rt-below{
+
+}
+/* 购物车 */
+.shopcart{
+	position : fixed;
+	bottom : 0;
+	right : 0;
+	z-index : 102px;
+
+    width: 350px;
+    height: 46px;
+    font-size: 14px;
+}
+/* 购物车篮子 */
+.shopcart-basket{
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 15px #ccc;
+	z-index : 1;
+}
+.top0{
+	top : 0px !important;
+}
+.basket-title{
+	padding: 0 10px;
+    height: 45px;
+	line-height : 45px;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+	background-color: #fafafa;
+    border-top: 2px solid #f00;
+}
+.basket-item {
+	display: table;
+    table-layout: fixed;
+    height: 45px;
+    width: 94%;
+    padding: 0 3%;
+    margin-top: -1px;
+}
+.cell{
+	display: table-cell !important;
+    vertical-align: middle;
+    border-bottom: 1px solid #eee;
+}
+.item-name{
+	    width: 50%;
+    margin-right: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #666;
+}
+.item-quantity{
+	width : 25%;
+}
+.item-total{
+	text-align: right;
+    color: #f33;
+}
+
+/* 购物车底部 */
+.shopcart-footer{
+	z-index: 2;
+    position: relative;
+    cursor: pointer;
+    height: 46px;
+    line-height: 46px;
+    background-color: #333;
+    box-shadow: 0 1px 3px #2c2c2c;
+		color : #fff;
+}
+.compute{
+	width : 70%;
+	float : left;
+}
+.icon-cart, .total-money, .deliver-fee{
+	display: inline-block;
+}
+	/* 购物车图标 */
+.icon-cart{
+	position: relative;
+	width: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+	
+	transition: font-size 0.1s;
+	-moz-transition: font-size 0.1s;	/* Firefox 4 */
+	-webkit-transition: font-size 0.1s;	/* Safari 和 Chrome */
+	-o-transition: font-size 0.1s;	/* Opera */
+}
+	/* 购物车图标右上角商品总数 */
+.cart-goods-quantity{
+    position: absolute;
+    top: 10px;
+    left: 22px;
+    height: 16px;
+	min-width : 17px;
+    line-height: 16px;
+    border-radius: 50%;
+    font-size: 14px;
+    text-align: center;
+    background-color: #f33;
+    color: #fff;
+    font-weight: 700;
+}
+	/* 总价钱 */
+.total-money{
+	font-size: 24px;
+	color : #fff;
+}
+.total-money:before{
+	font-size : 16px;
+}
+	/* 配送费 */
+.deliver-fee{
+	color : #999;
+	font-size : 12px;
+	border-left: 1px solid #555;
+	padding-left : 10px;
+	line-height : 1;
+}
+	/* 去结算 */
+.topay{
+	width : 30%;
+	float : right;
+    text-align: center;
+    background-color: #06f;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+}
+
+.fly_item {
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    position: absolute;
+	display : none;
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+

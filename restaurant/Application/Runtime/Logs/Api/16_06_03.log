@@ -1,0 +1,781 @@
+[ 2016-06-03T09:34:56+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bs_user` [ RunTime:0.0050s ]
+SQL: UPDATE `bs_user` SET `password`='d41d8cd98f00b204e9800998ecf8427e',`head_img`='NULL
+' WHERE `id` = 2 [ RunTime:0.1180s ]
+
+[ 2016-06-03T09:35:01+08:00 ] 127.0.0.1 /restaurant/index.php/Api/Common/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: X_FILENAME D:\app\phpstudy2014\WWW\restaurant\Application\Api\Controller\CommonController.class.php 第 65 行.
+NOTIC: [8] Undefined index: HTTP_X_FILENAME D:\app\phpstudy2014\WWW\restaurant\Application\Api\Controller\CommonController.class.php 第 67 行.
+
+[ 2016-06-03T09:35:27+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `bs_user` [ RunTime:0.0050s ]
+SQL: UPDATE `bs_user` SET `password`='d41d8cd98f00b204e9800998ecf8427e',`head_img`='NULL
+' WHERE `id` = 2 [ RunTime:0.1130s ]
+
+[ 2016-06-03T09:35:32+08:00 ] 127.0.0.1 /restaurant/index.php/Api/Common/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: X_FILENAME D:\app\phpstudy2014\WWW\restaurant\Application\Api\Controller\CommonController.class.php 第 65 行.
+NOTIC: [8] Undefined index: HTTP_X_FILENAME D:\app\phpstudy2014\WWW\restaurant\Application\Api\Controller\CommonController.class.php 第 67 行.
+NOTIC: [8] Undefined index: HTTP_X_FILENAME D:\app\phpstudy2014\WWW\restaurant\Application\Api\Controller\CommonController.class.php 第 69 行.
+
+[ 2016-06-03T09:35:45+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bs_user` [ RunTime:0.0040s ]
+SQL: UPDATE `bs_user` SET `password`='d41d8cd98f00b204e9800998ecf8427e',`head_img`='NULL
+' WHERE `id` = 2 [ RunTime:0.1010s ]
+
+[ 2016-06-03T09:35:52+08:00 ] 127.0.0.1 /restaurant/index.php/Api/Common/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: X_FILENAME D:\app\phpstudy2014\WWW\restaurant\Application\Api\Controller\CommonController.class.php 第 65 行.
+NOTIC: [8] Undefined index: HTTP_X_FILENAME D:\app\phpstudy2014\WWW\restaurant\Application\Api\Controller\CommonController.class.php 第 67 行.
+
+[ 2016-06-03T09:38:17+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bs_user` [ RunTime:0.0040s ]
+SQL: UPDATE `bs_user` SET `password`='d41d8cd98f00b204e9800998ecf8427e',`head_img`='array(45) {
+  [&quot;PATH&quot;]=&gt;
+  string(247) &quot;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\dev\\TortoiseSVN\\bin;D:\\dev\\Git\\cmd;D:\\dev\\Git\\mingw64\\bin;D:\\dev\\Git\\usr\\bin;C:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm&quot;
+  [&quot;SYSTEMROOT&quot;]=&gt;
+  string(10) &quot;C:\\Windows&quot;
+  [&quot;COMSPEC&quot;]=&gt;
+  string(27) &quot;C:\\Windows\\system32\\cmd.exe&quot;
+  [&quot;PATHEXT&quot;]=&gt;
+  string(53) &quot;.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC&quot;
+  [&quot;WINDIR&quot;]=&gt;
+  string(10) &quot;C:\\Windows&quot;
+  [&quot;PHP_FCGI_MAX_REQUESTS&quot;]=&gt;
+  string(4) &quot;1000&quot;
+  [&quot;PHPRC&quot;]=&gt;
+  string(26) &quot;D:/app/phpstudy2014/php54n&quot;
+  [&quot;_FCGI_SHUTDOWN_EVENT_&quot;]=&gt;
+  string(3) &quot;452&quot;
+  [&quot;PATH_TRANSLATED&quot;]=&gt;
+  string(41) &quot;D:\\app\\phpstudy2014\\WWW\\Api\\Common\\upload&quot;
+  [&quot;PATH_INFO&quot;]=&gt;
+  string(13) &quot;Common/upload&quot;
+  [&quot;SCRIPT_NAME&quot;]=&gt;
+  string(21) &quot;/restaurant/index.php&quot;
+  [&quot;REQUEST_URI&quot;]=&gt;
+  string(39) &quot;/restaurant/index.php/Api/Common/upload&quot;
+  [&quot;QUERY_STRING&quot;]=&gt;
+  string(0) &quot;&quot;
+  [&quot;REQUEST_METHOD&quot;]=&gt;
+  string(4) &quot;POST&quot;
+  [&quot;SERVER_PROTOCOL&quot;]=&gt;
+  string(8) &quot;HTTP/1.1&quot;
+  [&quot;GATEWAY_INTERFACE&quot;]=&gt;
+  string(7) &quot;CGI/1.1&quot;
+  [&quot;REMOTE_PORT&quot;]=&gt;
+  string(5) &quot;50945&quot;
+  [&quot;SCRIPT_FILENAME&quot;]=&gt;
+  string(44) &quot;D:/app/phpstudy2014/WWW/restaurant/index.php&quot;
+  [&quot;SERVER_ADMIN&quot;]=&gt;
+  string(18) &quot;admin@phpStudy.net&quot;
+  [&quot;CONTEXT_DOCUMENT_ROOT&quot;]=&gt;
+  string(23) &quot;D:/app/phpstudy2014/WWW&quot;
+  [&quot;CONTEXT_PREFIX&quot;]=&gt;
+  string(0) &quot;&quot;
+  [&quot;REQUEST_SCHEME&quot;]=&gt;
+  string(4) &quot;http&quot;
+  [&quot;DOCUMENT_ROOT&quot;]=&gt;
+  string(23) &quot;D:/app/phpstudy2014/WWW&quot;
+  [&quot;REMOTE_ADDR&quot;]=&gt;
+  string(9) &quot;127.0.0.1&quot;
+  [&quot;SERVER_PORT&quot;]=&gt;
+  string(2) &quot;80&quot;
+  [&quot;SERVER_ADDR&quot;]=&gt;
+  string(9) &quot;127.0.0.1&quot;
+  [&quot;SERVER_NAME&quot;]=&gt;
+  string(17) &quot;www.yanmanlou.com&quot;
+  [&quot;SERVER_SOFTWARE&quot;]=&gt;
+  string(53) &quot;Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9&quot;
+  [&quot;SERVER_SIGNATURE&quot;]=&gt;
+  string(0) &quot;&quot;
+  [&quot;SystemRoot&quot;]=&gt;
+  string(10) &quot;C:\\Windows&quot;
+  [&quot;HTTP_COOKIE&quot;]=&gt;
+  string(36) &quot;PHPSESSID=k53sacdhocfng2j0ai2v40svm6&quot;
+  [&quot;HTTP_ACCEPT_LANGUAGE&quot;]=&gt;
+  string(14) &quot;zh-CN,zh;q=0.8&quot;
+  [&quot;HTTP_ACCEPT_ENCODING&quot;]=&gt;
+  string(13) &quot;gzip, deflate&quot;
+  [&quot;HTTP_REFERER&quot;]=&gt;
+  string(58) &quot;http://www.yanmanlou.com/restaurant/front/user_center.html&quot;
+  [&quot;HTTP_ACCEPT&quot;]=&gt;
+  string(3) &quot;*/*&quot;
+  [&quot;CONTENT_TYPE&quot;]=&gt;
+  string(10) &quot;image/jpeg&quot;
+  [&quot;HTTP_USER_AGENT&quot;]=&gt;
+  string(109) &quot;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36&quot;
+  [&quot;HTTP_ORIGIN&quot;]=&gt;
+  string(24) &quot;http://www.yanmanlou.com&quot;
+  [&quot;CONTENT_LENGTH&quot;]=&gt;
+  string(5) &quot;40176&quot;
+  [&quot;HTTP_CONNECTION&quot;]=&gt;
+  string(5) &quot;close&quot;
+  [&quot;HTTP_HOST&quot;]=&gt;
+  string(17) &quot;www.yanmanlou.com&quot;
+  [&quot;FCGI_ROLE&quot;]=&gt;
+  string(9) &quot;RESPONDER&quot;
+  [&quot;PHP_SELF&quot;]=&gt;
+  string(39) &quot;/restaurant/index.php/Api/Common/upload&quot;
+  [&quot;REQUEST_TIME_FLOAT&quot;]=&gt;
+  float(1464917751.9799)
+  [&quot;REQUEST_TIME&quot;]=&gt;
+  int(1464917751)
+}
+' WHERE `id` = 2 [ RunTime:0.0820s ]
+
+[ 2016-06-03T09:38:30+08:00 ] 127.0.0.1 /restaurant/index.php/Api/Common/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: X_FILENAME D:\app\phpstudy2014\WWW\restaurant\Application\Api\Controller\CommonController.class.php 第 65 行.
+NOTIC: [8] Undefined index: HTTP_X_FILENAME D:\app\phpstudy2014\WWW\restaurant\Application\Api\Controller\CommonController.class.php 第 67 行.
+
+[ 2016-06-03T09:39:26+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bs_user` [ RunTime:0.0120s ]
+SQL: UPDATE `bs_user` SET `password`='d41d8cd98f00b204e9800998ecf8427e',`head_img`='array(11) {
+  [&quot;Cookie&quot;]=&gt;
+  string(36) &quot;PHPSESSID=k53sacdhocfng2j0ai2v40svm6&quot;
+  [&quot;Accept-Language&quot;]=&gt;
+  string(14) &quot;zh-CN,zh;q=0.8&quot;
+  [&quot;Accept-Encoding&quot;]=&gt;
+  string(13) &quot;gzip, deflate&quot;
+  [&quot;Referer&quot;]=&gt;
+  string(58) &quot;http://www.yanmanlou.com/restaurant/front/user_center.html&quot;
+  [&quot;Accept&quot;]=&gt;
+  string(3) &quot;*/*&quot;
+  [&quot;Content-Type&quot;]=&gt;
+  string(10) &quot;image/jpeg&quot;
+  [&quot;User-Agent&quot;]=&gt;
+  string(109) &quot;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36&quot;
+  [&quot;Origin&quot;]=&gt;
+  string(24) &quot;http://www.yanmanlou.com&quot;
+  [&quot;Content-Length&quot;]=&gt;
+  string(5) &quot;40176&quot;
+  [&quot;Connection&quot;]=&gt;
+  string(5) &quot;close&quot;
+  [&quot;Host&quot;]=&gt;
+  string(17) &quot;www.yanmanlou.com&quot;
+}
+' WHERE `id` = 2 [ RunTime:0.0490s ]
+
+[ 2016-06-03T09:48:22+08:00 ] 127.0.0.1 /restaurant/index.php/Api/Common/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-03T09:48:22+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bs_user` [ RunTime:0.0040s ]
+SQL: UPDATE `bs_user` SET `password`='d41d8cd98f00b204e9800998ecf8427e',`head_img`='array(45) {
+  [&quot;PATH&quot;]=&gt;
+  string(247) &quot;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\dev\\TortoiseSVN\\bin;D:\\dev\\Git\\cmd;D:\\dev\\Git\\mingw64\\bin;D:\\dev\\Git\\usr\\bin;C:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm&quot;
+  [&quot;SYSTEMROOT&quot;]=&gt;
+  string(10) &quot;C:\\Windows&quot;
+  [&quot;COMSPEC&quot;]=&gt;
+  string(27) &quot;C:\\Windows\\system32\\cmd.exe&quot;
+  [&quot;PATHEXT&quot;]=&gt;
+  string(53) &quot;.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC&quot;
+  [&quot;WINDIR&quot;]=&gt;
+  string(10) &quot;C:\\Windows&quot;
+  [&quot;PHP_FCGI_MAX_REQUESTS&quot;]=&gt;
+  string(4) &quot;1000&quot;
+  [&quot;PHPRC&quot;]=&gt;
+  string(26) &quot;D:/app/phpstudy2014/php54n&quot;
+  [&quot;_FCGI_SHUTDOWN_EVENT_&quot;]=&gt;
+  string(4) &quot;1908&quot;
+  [&quot;PATH_TRANSLATED&quot;]=&gt;
+  string(41) &quot;D:\\app\\phpstudy2014\\WWW\\Api\\Common\\upload&quot;
+  [&quot;PATH_INFO&quot;]=&gt;
+  string(13) &quot;Common/upload&quot;
+  [&quot;SCRIPT_NAME&quot;]=&gt;
+  string(21) &quot;/restaurant/index.php&quot;
+  [&quot;REQUEST_URI&quot;]=&gt;
+  string(39) &quot;/restaurant/index.php/Api/Common/upload&quot;
+  [&quot;QUERY_STRING&quot;]=&gt;
+  string(0) &quot;&quot;
+  [&quot;REQUEST_METHOD&quot;]=&gt;
+  string(4) &quot;POST&quot;
+  [&quot;SERVER_PROTOCOL&quot;]=&gt;
+  string(8) &quot;HTTP/1.1&quot;
+  [&quot;GATEWAY_INTERFACE&quot;]=&gt;
+  string(7) &quot;CGI/1.1&quot;
+  [&quot;REMOTE_PORT&quot;]=&gt;
+  string(5) &quot;51207&quot;
+  [&quot;SCRIPT_FILENAME&quot;]=&gt;
+  string(44) &quot;D:/app/phpstudy2014/WWW/restaurant/index.php&quot;
+  [&quot;SERVER_ADMIN&quot;]=&gt;
+  string(18) &quot;admin@phpStudy.net&quot;
+  [&quot;CONTEXT_DOCUMENT_ROOT&quot;]=&gt;
+  string(23) &quot;D:/app/phpstudy2014/WWW&quot;
+  [&quot;CONTEXT_PREFIX&quot;]=&gt;
+  string(0) &quot;&quot;
+  [&quot;REQUEST_SCHEME&quot;]=&gt;
+  string(4) &quot;http&quot;
+  [&quot;DOCUMENT_ROOT&quot;]=&gt;
+  string(23) &quot;D:/app/phpstudy2014/WWW&quot;
+  [&quot;REMOTE_ADDR&quot;]=&gt;
+  string(9) &quot;127.0.0.1&quot;
+  [&quot;SERVER_PORT&quot;]=&gt;
+  string(2) &quot;80&quot;
+  [&quot;SERVER_ADDR&quot;]=&gt;
+  string(9) &quot;127.0.0.1&quot;
+  [&quot;SERVER_NAME&quot;]=&gt;
+  string(17) &quot;www.yanmanlou.com&quot;
+  [&quot;SERVER_SOFTWARE&quot;]=&gt;
+  string(53) &quot;Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9&quot;
+  [&quot;SERVER_SIGNATURE&quot;]=&gt;
+  string(0) &quot;&quot;
+  [&quot;SystemRoot&quot;]=&gt;
+  string(10) &quot;C:\\Windows&quot;
+  [&quot;HTTP_COOKIE&quot;]=&gt;
+  string(36) &quot;PHPSESSID=k53sacdhocfng2j0ai2v40svm6&quot;
+  [&quot;HTTP_ACCEPT_LANGUAGE&quot;]=&gt;
+  string(14) &quot;zh-CN,zh;q=0.8&quot;
+  [&quot;HTTP_ACCEPT_ENCODING&quot;]=&gt;
+  string(13) &quot;gzip, deflate&quot;
+  [&quot;HTTP_REFERER&quot;]=&gt;
+  string(58) &quot;http://www.yanmanlou.com/restaurant/front/user_center.html&quot;
+  [&quot;HTTP_ACCEPT&quot;]=&gt;
+  string(3) &quot;*/*&quot;
+  [&quot;CONTENT_TYPE&quot;]=&gt;
+  string(10) &quot;image/jpeg&quot;
+  [&quot;HTTP_USER_AGENT&quot;]=&gt;
+  string(109) &quot;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36&quot;
+  [&quot;HTTP_ORIGIN&quot;]=&gt;
+  string(24) &quot;http://www.yanmanlou.com&quot;
+  [&quot;CONTENT_LENGTH&quot;]=&gt;
+  string(5) &quot;40176&quot;
+  [&quot;HTTP_CONNECTION&quot;]=&gt;
+  string(5) &quot;close&quot;
+  [&quot;HTTP_HOST&quot;]=&gt;
+  string(17) &quot;www.yanmanlou.com&quot;
+  [&quot;FCGI_ROLE&quot;]=&gt;
+  string(9) &quot;RESPONDER&quot;
+  [&quot;PHP_SELF&quot;]=&gt;
+  string(39) &quot;/restaurant/index.php/Api/Common/upload&quot;
+  [&quot;REQUEST_TIME_FLOAT&quot;]=&gt;
+  float(1464918502.1156)
+  [&quot;REQUEST_TIME&quot;]=&gt;
+  int(1464918502)
+}
+' WHERE `id` = 2 [ RunTime:0.0486s ]
+
+[ 2016-06-03T09:49:08+08:00 ] 127.0.0.1 /restaurant/index.php/Api/Common/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-03T09:53:21+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bs_user` [ RunTime:0.0070s ]
+SQL: UPDATE `bs_user` SET `password`='d41d8cd98f00b204e9800998ecf8427e',`head_img`='array(45) {
+  [&quot;PATH&quot;]=&gt;
+  string(247) &quot;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\dev\\TortoiseSVN\\bin;D:\\dev\\Git\\cmd;D:\\dev\\Git\\mingw64\\bin;D:\\dev\\Git\\usr\\bin;C:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm&quot;
+  [&quot;SYSTEMROOT&quot;]=&gt;
+  string(10) &quot;C:\\Windows&quot;
+  [&quot;COMSPEC&quot;]=&gt;
+  string(27) &quot;C:\\Windows\\system32\\cmd.exe&quot;
+  [&quot;PATHEXT&quot;]=&gt;
+  string(53) &quot;.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC&quot;
+  [&quot;WINDIR&quot;]=&gt;
+  string(10) &quot;C:\\Windows&quot;
+  [&quot;PHP_FCGI_MAX_REQUESTS&quot;]=&gt;
+  string(4) &quot;1000&quot;
+  [&quot;PHPRC&quot;]=&gt;
+  string(26) &quot;D:/app/phpstudy2014/php54n&quot;
+  [&quot;_FCGI_SHUTDOWN_EVENT_&quot;]=&gt;
+  string(4) &quot;1908&quot;
+  [&quot;PATH_TRANSLATED&quot;]=&gt;
+  string(41) &quot;D:\\app\\phpstudy2014\\WWW\\Api\\Common\\upload&quot;
+  [&quot;PATH_INFO&quot;]=&gt;
+  string(13) &quot;Common/upload&quot;
+  [&quot;SCRIPT_NAME&quot;]=&gt;
+  string(21) &quot;/restaurant/index.php&quot;
+  [&quot;REQUEST_URI&quot;]=&gt;
+  string(39) &quot;/restaurant/index.php/Api/Common/upload&quot;
+  [&quot;QUERY_STRING&quot;]=&gt;
+  string(0) &quot;&quot;
+  [&quot;REQUEST_METHOD&quot;]=&gt;
+  string(4) &quot;POST&quot;
+  [&quot;SERVER_PROTOCOL&quot;]=&gt;
+  string(8) &quot;HTTP/1.1&quot;
+  [&quot;GATEWAY_INTERFACE&quot;]=&gt;
+  string(7) &quot;CGI/1.1&quot;
+  [&quot;REMOTE_PORT&quot;]=&gt;
+  string(5) &quot;51228&quot;
+  [&quot;SCRIPT_FILENAME&quot;]=&gt;
+  string(44) &quot;D:/app/phpstudy2014/WWW/restaurant/index.php&quot;
+  [&quot;SERVER_ADMIN&quot;]=&gt;
+  string(18) &quot;admin@phpStudy.net&quot;
+  [&quot;CONTEXT_DOCUMENT_ROOT&quot;]=&gt;
+  string(23) &quot;D:/app/phpstudy2014/WWW&quot;
+  [&quot;CONTEXT_PREFIX&quot;]=&gt;
+  string(0) &quot;&quot;
+  [&quot;REQUEST_SCHEME&quot;]=&gt;
+  string(4) &quot;http&quot;
+  [&quot;DOCUMENT_ROOT&quot;]=&gt;
+  string(23) &quot;D:/app/phpstudy2014/WWW&quot;
+  [&quot;REMOTE_ADDR&quot;]=&gt;
+  string(9) &quot;127.0.0.1&quot;
+  [&quot;SERVER_PORT&quot;]=&gt;
+  string(2) &quot;80&quot;
+  [&quot;SERVER_ADDR&quot;]=&gt;
+  string(9) &quot;127.0.0.1&quot;
+  [&quot;SERVER_NAME&quot;]=&gt;
+  string(17) &quot;www.yanmanlou.com&quot;
+  [&quot;SERVER_SOFTWARE&quot;]=&gt;
+  string(53) &quot;Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9&quot;
+  [&quot;SERVER_SIGNATURE&quot;]=&gt;
+  string(0) &quot;&quot;
+  [&quot;SystemRoot&quot;]=&gt;
+  string(10) &quot;C:\\Windows&quot;
+  [&quot;HTTP_COOKIE&quot;]=&gt;
+  string(36) &quot;PHPSESSID=k53sacdhocfng2j0ai2v40svm6&quot;
+  [&quot;HTTP_ACCEPT_LANGUAGE&quot;]=&gt;
+  string(14) &quot;zh-CN,zh;q=0.8&quot;
+  [&quot;HTTP_ACCEPT_ENCODING&quot;]=&gt;
+  string(13) &quot;gzip, deflate&quot;
+  [&quot;HTTP_REFERER&quot;]=&gt;
+  string(58) &quot;http://www.yanmanlou.com/restaurant/front/user_center.html&quot;
+  [&quot;HTTP_ACCEPT&quot;]=&gt;
+  string(3) &quot;*/*&quot;
+  [&quot;CONTENT_TYPE&quot;]=&gt;
+  string(10) &quot;image/jpeg&quot;
+  [&quot;HTTP_USER_AGENT&quot;]=&gt;
+  string(109) &quot;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36&quot;
+  [&quot;HTTP_ORIGIN&quot;]=&gt;
+  string(24) &quot;http://www.yanmanlou.com&quot;
+  [&quot;CONTENT_LENGTH&quot;]=&gt;
+  string(5) &quot;40176&quot;
+  [&quot;HTTP_CONNECTION&quot;]=&gt;
+  string(5) &quot;close&quot;
+  [&quot;HTTP_HOST&quot;]=&gt;
+  string(17) &quot;www.yanmanlou.com&quot;
+  [&quot;FCGI_ROLE&quot;]=&gt;
+  string(9) &quot;RESPONDER&quot;
+  [&quot;PHP_SELF&quot;]=&gt;
+  string(39) &quot;/restaurant/index.php/Api/Common/upload&quot;
+  [&quot;REQUEST_TIME_FLOAT&quot;]=&gt;
+  float(1464918548.1779)
+  [&quot;REQUEST_TIME&quot;]=&gt;
+  int(1464918548)
+}
+' WHERE `id` = 2 [ RunTime:0.0980s ]
+
+[ 2016-06-03T09:53:26+08:00 ] 127.0.0.1 /restaurant/index.php/Api/Common/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-06-03T10:11:33+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bs_user` [ RunTime:0.0040s ]
+SQL: UPDATE `bs_user` SET `password`='d41d8cd98f00b204e9800998ecf8427e',`head_img`='array(11) {
+  [&quot;Cookie&quot;]=&gt;
+  string(36) &quot;PHPSESSID=k53sacdhocfng2j0ai2v40svm6&quot;
+  [&quot;Accept-Language&quot;]=&gt;
+  string(14) &quot;zh-CN,zh;q=0.8&quot;
+  [&quot;Accept-Encoding&quot;]=&gt;
+  string(13) &quot;gzip, deflate&quot;
+  [&quot;Referer&quot;]=&gt;
+  string(58) &quot;http://www.yanmanlou.com/restaurant/front/user_center.html&quot;
+  [&quot;Accept&quot;]=&gt;
+  string(3) &quot;*/*&quot;
+  [&quot;Content-Type&quot;]=&gt;
+  string(10) &quot;image/jpeg&quot;
+  [&quot;User-Agent&quot;]=&gt;
+  string(109) &quot;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36&quot;
+  [&quot;Origin&quot;]=&gt;
+  string(24) &quot;http://www.yanmanlou.com&quot;
+  [&quot;Content-Length&quot;]=&gt;
+  string(5) &quot;40176&quot;
+  [&quot;Connection&quot;]=&gt;
+  string(5) &quot;close&quot;
+  [&quot;Host&quot;]=&gt;
+  string(17) &quot;www.yanmanlou.com&quot;
+}
+' WHERE `id` = 2 [ RunTime:0.0590s ]
+
+[ 2016-06-03T10:24:17+08:00 ] 127.0.0.1 /restaurant/index.php/Api/Common/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: X_FILENAME D:\app\phpstudy2014\WWW\restaurant\Application\Api\Controller\CommonController.class.php 第 64 行.
+
+[ 2016-06-03T10:27:10+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/getPicCode?0.22459059546845794
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-06-03T10:27:15+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/checkPicCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\app\phpstudy2014\WWW\restaurant\ThinkPHP\Library\Think\Verify.class.php 第 88 行.
+
+[ 2016-06-03T10:27:15+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bs_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `bs_user` WHERE ( (uname='liuc' or email='liuc' or phone='liuc') and password='e80b5017098950fc58aad83c8c14978e' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-06-03T10:27:21+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/checkPicCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\app\phpstudy2014\WWW\restaurant\ThinkPHP\Library\Think\Verify.class.php 第 88 行.
+
+[ 2016-06-03T10:27:21+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bs_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `bs_user` WHERE ( (uname='liuc' or email='liuc' or phone='liuc') and password='e80b5017098950fc58aad83c8c14978e' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-06-03T10:27:25+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/checkPicCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\app\phpstudy2014\WWW\restaurant\ThinkPHP\Library\Think\Verify.class.php 第 88 行.
+
+[ 2016-06-03T10:27:25+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bs_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `bs_user` WHERE ( (uname='liuc' or email='liuc' or phone='liuc') and password='e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-06-03T10:27:32+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/checkPicCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\app\phpstudy2014\WWW\restaurant\ThinkPHP\Library\Think\Verify.class.php 第 88 行.
+
+[ 2016-06-03T10:27:32+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bs_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `bs_user` WHERE ( (uname='test' or email='test' or phone='test') and password='e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-06-03T10:27:38+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/checkPicCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\app\phpstudy2014\WWW\restaurant\ThinkPHP\Library\Think\Verify.class.php 第 88 行.
+
+[ 2016-06-03T10:27:38+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bs_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `bs_user` WHERE ( (uname='test' or email='test' or phone='test') and password='e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-06-03T10:27:41+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/getPicCode?0.30498485182797075
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-03T10:27:46+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/checkPicCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\app\phpstudy2014\WWW\restaurant\ThinkPHP\Library\Think\Verify.class.php 第 88 行.
+
+[ 2016-06-03T10:27:46+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bs_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `bs_user` WHERE ( (uname='test' or email='test' or phone='test') and password='e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-06-03T10:27:49+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/checkPicCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\app\phpstudy2014\WWW\restaurant\ThinkPHP\Library\Think\Verify.class.php 第 88 行.
+
+[ 2016-06-03T10:27:50+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bs_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `bs_user` WHERE ( (uname='test' or email='test' or phone='test') and password='e80b5017098950fc58aad83c8c14978e' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-06-03T10:27:51+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/checkPicCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\app\phpstudy2014\WWW\restaurant\ThinkPHP\Library\Think\Verify.class.php 第 88 行.
+
+[ 2016-06-03T10:27:51+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bs_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `bs_user` WHERE ( (uname='test' or email='test' or phone='test') and password='e80b5017098950fc58aad83c8c14978e' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-06-03T10:27:56+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/checkPicCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\app\phpstudy2014\WWW\restaurant\ThinkPHP\Library\Think\Verify.class.php 第 88 行.
+
+[ 2016-06-03T10:27:56+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bs_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `bs_user` WHERE ( (uname='test' or email='test' or phone='test') and password='e80b5017098950fc58aad83c8c14978e' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-06-03T10:28:45+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/checkPicCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\app\phpstudy2014\WWW\restaurant\ThinkPHP\Library\Think\Verify.class.php 第 88 行.
+
+[ 2016-06-03T10:28:45+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bs_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `bs_user` WHERE ( (uname='test' or email='test' or phone='test') and password='e80b5017098950fc58aad83c8c14978e' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-06-03T10:28:47+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/getPicCode?0.598270556655734
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-06-03T10:28:51+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/checkPicCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\app\phpstudy2014\WWW\restaurant\ThinkPHP\Library\Think\Verify.class.php 第 88 行.
+
+[ 2016-06-03T10:28:51+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bs_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `bs_user` WHERE ( (uname='test' or email='test' or phone='test') and password='e80b5017098950fc58aad83c8c14978e' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-06-03T10:28:55+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/checkPicCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\app\phpstudy2014\WWW\restaurant\ThinkPHP\Library\Think\Verify.class.php 第 88 行.
+
+[ 2016-06-03T10:28:55+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bs_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `bs_user` WHERE ( (uname='test' or email='test' or phone='test') and password='e80b5017098950fc58aad83c8c14978e' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-06-03T10:28:59+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/checkPicCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\app\phpstudy2014\WWW\restaurant\ThinkPHP\Library\Think\Verify.class.php 第 88 行.
+
+[ 2016-06-03T10:28:59+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bs_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `bs_user` WHERE ( (uname='test' or email='test' or phone='test') and password='e80b5017098950fc58aad83c8c14978e' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-06-03T10:29:04+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/checkPicCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\app\phpstudy2014\WWW\restaurant\ThinkPHP\Library\Think\Verify.class.php 第 88 行.
+
+[ 2016-06-03T10:29:04+08:00 ] 127.0.0.1 /restaurant/index.php/Api/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bs_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `bs_user` WHERE ( (uname='test' or email='test' or phone='test') and password='e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `bs_user` SET `last_visit`='2016-06-03 10:29:04' WHERE ( id=1 ) [ RunTime:0.0624s ]
+

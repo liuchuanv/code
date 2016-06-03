@@ -1,0 +1,6 @@
+段落标签p下不能嵌套ul标签
+
+<a href="#">
+	<img src="" />
+</a>
+a标签的高度总是比img的高度高4px，即使是img的border、padding、margin都为0

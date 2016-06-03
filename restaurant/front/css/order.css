@@ -1,0 +1,140 @@
+body{
+	background : #f8f8f8;
+}
+/** 主体 **/
+.main{
+	font-family : "微软雅黑",Arial;
+	background : #f8f8f8;
+}
+.main .container{
+	margin-top : 10px;
+}
+/* 左边 订单详情 */
+.mn-left{
+	width : 34%;
+	border : 1px solid #ddd;
+	border-bottom : none;
+	background : #fff;
+}
+.detail-head h3{
+	line-height: 60px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    color: #333;
+    padding: 0 20px;
+}
+.food-title, .food-list, .food-extra, .detail-total{padding : 0 30px;}
+.food-title{
+    color: #999;
+    font-weight: 700;
+}
+.cell{
+	float : left;
+	line-height: 40px;
+}
+.foodname{ width:40%} 
+.foodamount{text-align : center !important; width:40% !important} 
+.foodtotal{ text-align : center; width:20%} 
+
+.food-list .foodamount{padding : 10px 0; }
+
+.food-list{ background: #fbfbfb;}
+.food-list dd{border-bottom: 1px solid #f2f2f2;}
+.food-list dd:after{
+	content: '\20';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.detail-total{text-align : right;padding-bottom : 20px;}
+.detail-total .big{font-size : 32px; font-weight : 700}
+
+/* 右边 */
+.mn-right{
+	width : 64%;
+	border: 1px solid #ddd;
+	background : #fff;
+	padding-bottom : 40px;
+}
+.mn-right >div{
+	padding : 0 30px 20px;
+}
+.mn-right h3{
+	line-height: 60px;
+    font-size: 16px;
+    color: #333;
+	display : inline-block;
+}
+.addr-head a{
+	display : inline-block;
+	width : 90%;
+	text-align : right;
+}
+.mn-right .active{
+	border-color: #06f;
+    z-index: 1;
+    background: url("../img/sanjiao.png") right bottom no-repeat;
+}
+.addr-item, .pay-item{
+	padding: 10px 0;
+    border: 1px solid #eee;
+	position : relative;
+	
+	cursor : pointer;
+	margin-bottom : 5px;
+}
+
+.addr-item .iconfont{
+	font-size: 30px;
+    padding: 0 18px;
+    color: #999;
+    border-right: 1px solid #eee;
+}
+.addr-item .addr-info{ padding : 0 15px; }
+.addr-item .addr-info p{ line-height : 25px; }
+.addr-item .addr-update{
+	position : absolute;
+	right : 20px;
+	top : 15px;
+}
+/* 支付方式 */
+.pay-item {width : 48%;}
+.pay-item p{padding : 0 20px; line-height:25px}
+/* 其他信息 */
+.addition-item {
+	line-height : 35px;
+}
+.addition-item label{
+	display : inline-block;
+	width : 12%;
+	text-align: right;
+}
+.addition-item span, .addition-item input, .addition-item select{
+	display : inline-block;
+	margin-left : 20px;
+}
+.addition-item select{
+	height : 30px;
+	width : 20%;
+	border : 1px solid #ddd;
+	outline : none;
+}
+.addition-item input[type='text']{
+	width : 40%;
+	padding : 2px 5px;
+	border : 1px solid #ddd;
+	outline : none;
+}
+
+.main input[type='submit'] {
+    width: 150px;
+    padding: 7px 0;
+    cursor: pointer;
+	border : none;
+	outline : none;
+	background : #f33;
+	font-size : 1.5em;
+	color : #fff;
+}
+
+

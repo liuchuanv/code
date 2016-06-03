@@ -1,0 +1,358 @@
+body{
+	background : #f8f8f8;
+}
+/** 主体 **/
+.main{
+	font-family : "微软雅黑",Arial;
+}
+.main .mn-top{
+	line-height : 50px;
+}
+.mn-top i{
+	padding : 0 5px;
+	font-style : normal;
+}
+
+.mn-left{
+	margin-top : 10px;
+	width : 15%;
+	text-align : center;
+}
+.mn-left-menu{
+	font-size : 1.3em;
+}
+.mn-left-menu li{
+	line-height : 40px;
+}
+.mn-left-menu li:hover a{
+	color : #f33;
+}
+.mn-left-menu li.active{
+	background-color : #f33;
+}
+.mn-left-menu li.active a{
+	color : #fff;
+}
+.mn-left-menu li a{
+	color : #000;
+}
+
+.mn-right{
+	width : 84%;
+	margin-top : 10px;
+	background : #fff;
+	border: 1px solid #eee;
+	min-height : 500px;
+}
+.mn-right .mnr-main{
+	padding : 0 20px 20px;
+}
+.mn-right h3{
+	font-size : 18px;
+	color : #666;
+	line-height : 50px;
+	border-bottom : 2px solid #eee;
+}
+.mnr-content{
+	font-size : 1.1em;
+}
+/** 个人中心 **/
+.mnr-content .item{
+	margin-top : 30px;
+}
+.mnr-content .item label{
+	display : inline-block;
+	width : 80px;
+	text-align : right;
+	vertical-align : top;
+	margin-right : 20px;
+}
+.mnr-content .item  .item-cont span{
+	display : inline-block;
+	width : 150px;
+	outline : none;
+}
+.mnr-content .item .item-avatar{
+	position : relative;
+}
+.mnr-content .item .item-avatar:hover a{
+	display : inline-block;
+}
+.mnr-content .item .item-avatar a{
+	display : none;
+	position : absolute;
+	background-color : rgba(72,72,72,.6);
+	text-align : center;
+	width : 80px;
+	font-size : 1em;
+	color : #fff;
+	bottom: 0;
+    left: 0;
+    line-height: 2.2em;
+}
+.item-avatar .btnWrap{
+	position: absolute;
+    left: 100px;
+    bottom: 5px;
+    width: 100px;
+}
+.item-avatar .btnWrap input[type='button'], .item-avatar .btnWrap input[type='submit']{
+	border: 0px;
+    outline: none;
+    padding: 2px 5px;
+    text-align: center;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.confirmBtn{
+	background : #06c;
+	color : #fff;
+}
+/** 最近订单 **/
+.order-item{
+	padding : 20px 0 15px 0;
+	display: table-cell;
+    vertical-align: middle;
+	border-top : 1px solid #eee;
+}
+.order-item a.img {
+	float : left;
+	margin-right : 20px;
+}
+.order-item a.img img {
+	width : 70px;
+	height :　70px;
+}
+.order-item p.name, .order-item p.title{
+	width : 400px;
+	overflow: hidden;
+}
+.order-time {
+	width: 85px;
+    color: #999;
+	text-align : center;
+	font-size : 0.85em;
+}
+.order-price{
+	width : 200px;
+	text-align : center;
+}
+.order-price .pay-way{
+	font-size : 0.8em;
+	color : #999;
+}
+div.order-status{
+	width : 120px;
+	text-align : center;
+}
+/** 收货地址 **/
+.accept-addr{
+	position: relative;
+    display: inline-block;
+	width : 268px;
+	margin-right : 30px;
+	margin-top : 15px;
+	height : 80px;
+	border : 1px solid #eee;
+	padding : 16px 12px;
+
+}
+.accept-addr:hover{
+	border-color : #f33;
+}
+.accept-addr p{
+	line-height : 2em;
+}
+.accept-addr p.abs{
+	position : absolute;
+	right : 10px;
+	top : 12px;
+	
+	font-size : 0.9em;
+}
+.accept-addr p.abs a{ color : #999;}
+.accept-addr:hover p.abs a{ color : #f33;}
+
+.add-accept-addr{
+	text-align : center;
+	cursor : pointer;
+}
+/*编辑收货地址*/
+.addrForm{
+	padding : 20px 20px;
+}
+.form-item {
+	font-family : '微软雅黑', Arial;
+	position: relative;
+    padding-bottom: 25px;
+    font-size: 14px;
+}
+.form-item label{
+	float: left;
+    display: inline-block;
+    width: 65px;
+    height: 38px;
+    margin-right: 20px;
+    line-height: 38px;
+    text-align: right;
+    color: rgb(102, 102, 102);
+}
+.form-item input[type='text']{
+    vertical-align: baseline;
+    box-sizing: border-box;
+    width: 300px;
+    height: 42px;
+    line-height: 38px;
+    padding-left: 10px;
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 2px;
+}
+.form-item .radioWrap{
+	vertical-align: baseline;
+	line-height: 38px;
+    padding-left: 10px;
+}
+.form-item .radioWrap input[type="radio"]{
+	margin-right : 5px;
+}
+.form-item  input[type='button'], .form-item  input[type='submit']{
+	border: 0;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 40px;
+    letter-spacing: 5px;
+	margin-right : 10px;
+}
+.form-item  input[type='submit']{
+	background : #06f;
+	color : #fff;
+}
+.form-item  input[type='button']{
+	background : #fff;
+}
+/* 订单详情 */
+.order-status2{
+	position : relative;
+	padding : 20px 0px;
+}
+.order-status2:after{
+	position: absolute;
+    bottom: 45px;
+	left : 5%;
+    width: 90%;
+    border-bottom: 1px solid #eee;
+    content: "";
+	text-align : center;
+}
+.order-status2 ul{
+	background : #f8f8f8;
+	padding : 15px 0;
+}
+.order-status2 li{
+	position : relative;
+	float : left;
+	width : 33%;
+	text-align : center;
+	padding-bottom : 25px;
+}
+.order-status2 li:after{
+	content : "";
+	position: absolute;
+	left : 47%;
+	bottom : 0;
+	border : 5px solid #f8f8f8;
+	border-radius : 50%;
+	background : #ddd;
+	width : 10px;
+	height : 10px;
+	z-index : 1;
+}
+.order-status2 li.active:after{
+	background : #06f;
+}
+.order-detail{
+	position : relative;
+	border-top : 1px solid #eee;
+	border-left : 1px solid #eee;
+	border-right : 1px solid #eee;
+}
+
+.detail-head img{
+	height : 50px;
+	float : left;
+	border-bottom : 1px solid #ddd;
+}
+.detail-head p{
+	width : 80%;
+	overflow : hidden;
+	padding-left : 10px;
+}
+.detail-head{
+	padding : 15px 20px;
+	border-bottom : 1px solid #ddd;
+	background : #f8f8f8;
+}
+.detail-head a.evaluate{
+	position : absolute;
+	right: 30px;
+    top: 20px;
+}
+.detail-left {
+	background : #f8f8f8;
+	display : table-cell;
+	width : 500px;
+	color : #666;
+}
+.detail-left table{
+	width : 100%;
+}
+.detail-left table tr{
+	height : 50px;
+	line-height : 50px;
+}
+.detail-left table thead{
+	border-bottom : 1px solid #ddd;
+}
+.detail-left table td.goods-name{
+	width : 50%;
+}
+.detail-left table td, .detail-left table th{
+	width : 25%;
+	text-align : left;
+	padding-left : 20px;
+}
+.detail-left  .order-sum{
+	text-align : right;
+	line-height : 60px;
+	padding-right : 40px;
+}
+.detail-right {
+	display : table-cell;
+	background : #fff;
+	vertical-align: top;
+	width : 45%;
+	padding-left : 20px;
+}
+.detail-right p{
+	line-height : 38px;
+	height : 38px;
+}
+.detail-right h3{
+	font-size : 1.1em;
+	border : none;
+}
+.detail-right .deliver-info , .detail-right .addr-info{
+	border-bottom : 1px dashed #eee;
+	padding: 8px 0;
+}
+.detail-right p label{
+	display : inline-block;
+	width : 80px;
+	text-align : right;
+	color : #888;
+}
+.detail-right .form-item span{
+	height : 38px;
+	line-height : 38px;
+}
+

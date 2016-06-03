@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>外卖网站</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/order.css" />
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/underscore.js"></script>
+	<script src="js/layer/layer.js"></script>
+	<script src="js/base.js"></script>
+	<!-- 商品数量加减按钮 -->
+	<script src="js/jquery.spinner/jquery.spinner.js"></script>
+	
+	<script src="js/order.js"></script>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<!-- 顶部 -->
+		<div class="hd-top clearfix">
+			<div class="container clearfix">
+				<span class="fl">
+					<i class="iconfont">&#xe600;</i>
+					青岛
+					<a href="#">[切换地址]</a>
+				</span>
+				<span class="fr info">
+					
+				</span>
+			</div>
+		</div>
+			
+		<!-- logo和搜索框 -->
+		<div class="hd-logo-search">
+			<div class="container clearfix">
+				<div class="logo fl">
+					<a href="#"><img src="img/logo.png" /></a>
+				</div>
+				<div class="search fr">
+					<form action="">
+						<span class="search-box">
+							<input type="text" name=""/>
+						</span>
+						<span class="btn-search">搜索</span> 
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //头部 -->
+	
+	<!-- 主体 -->
+	<div class="main">
+		<div class=" container clearfix">
+			<!-- 左边 -->
+			<div class="mn-left fl">
+				<!-- 订单详情-->
+				<div class="detail-head">
+					<h3>订单详情</h3>
+				</div>
+				<div class="detail-foods">
+					<div class="food-title clearfix">
+						<div class="cell foodname">商品</div>
+						<div class="cell foodamount">数量&nbsp;&nbsp;&nbsp;</div>
+						<div class="cell foodtotal">小计(元)</div>
+					</div>
+					<div class="food-list">
+						<dl><!-- data --></dl>
+					</div>
+					
+				</div><!-- //detail-foods -->
+				<div class="detail-total">
+					<p class="big cf33" data-icon="&#xe603;">505.00</p>
+					<p><!-- data --><p>
+				</div>
+				<div class="bg-img"></div>
+			</div><!-- //左边 -->
+			<!-- 右边 -->
+			<div class="mn-right fr">
+				<div class="accept-addr">
+					<div class="addr-head">
+						<h3>收货地址</h3>
+						<a href="">添加新地址</a>
+					</div>
+					<div class="addr-body">
+						<!-- data -->
+					</div>
+					<a href="javascript:void(0)" class="addr-foot">
+						显示更多地址
+					</a>
+				</div><!-- //收货地址 -->
+				<!-- 付款方式 -->
+				<div class="payway">
+					<div class="pay-head">
+						<h3>支付方式</h3>
+						<span class="ml10 cfa0">推荐使用在线支付，不用找零，优惠更多</span>
+					</div>
+					<div class="pay-body clearfix">
+						<div class="pay-item fl mr10 active">
+							<p>在线支付</p>
+							<p class="c999">支持微信、支付宝、QQ钱包及大部分银行卡</p>
+						</div>
+						<div class="pay-item fl">
+							<p>货到付款</p>
+							<p class="c999">送货上门后再付款</p>
+						</div>
+					</div>
+				</div><!-- //付款方式 -->
+				<!-- 其他信息 -->
+				<div class="addition">
+					<div class="addition-head">
+						<h3>其他信息</h3>
+					</div>
+					<div class="addition-item order_type">
+						<label>订单类型</label>
+						<input type="radio" name="order_type" value="1" checked/>配送
+						<input type="radio" name="order_type" value="2" />自提
+						<input type="radio" name="order_type" value="3" />去吃
+					</div>
+					<div class="addition-item">
+						<label>选择送达时间</label>
+						<select name="book_time">
+							<option value="06:00">06:00</option>
+							<option value="07:00">07:00</option>
+							<option value="08:00">08:00</option>
+							<option value="07:00">07:00</option>
+							<option value="09:00">09:00</option>
+							<option value="11:00">11:00</option>
+							<option value="12:00">12:00</option>
+							<option value="13:00">13:00</option>
+							<option value="14:00">14:00</option>
+							<option value="17:30">17:30</option>
+							<option value="18:00">18:00</option>
+							<option value="19:00">19:00</option>
+							<option value="20:00">20:00</option>
+							<option value="21:00">21:00</option>
+						</select>
+					</div>
+					<div class="addition-item">
+						<label>备注</label>
+						<input type="text" name="remark" />
+					</div>
+				</div><!-- //其他信息 -->
+				<div class="mt20">
+					<input type="submit" value="确认下单" id="submitOrder"/>
+				</div>
+			</div>	<!-- //右边 -->
+		</div>
+	</div><!-- //主体 -->
+	
+	<!-- 脚部 -->
+	<div class="footer">
+		
+	</div>
+	<!-- //脚部 -->
+	
+	<script type="text/template" id="userTpl">
+		欢迎你，<%=user.uname%>
+		<ul class="hide">
+			<li><a href="./user_center.html#0" data-icon="&#xe606;"> 个人中心</a></li>
+			<li><a href="./user_center.html#1" data-icon="&#xe608;"> 我的订单</a></li>
+			<li><a href="./user_center.html#2" data-icon="&#xe600;"> 收货地址</a></li>
+			<li><a href="javascript:void(0)" id="quit">退出登录</a></li>
+		</ul>
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/bootstrap-responsive.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/style.css" />
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.js"></script>
+
+
+    <style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+        .cf33{
+            color : #f33;
+        }
+        /* 订单详情 */
+        .order-detail{
+            position : relative;
+            border-top : 1px solid #eee;
+            border-left : 1px solid #eee;
+            border-right : 1px solid #eee;
+        }
+        .order-detail .bg-img{
+            background: url("__PUBLIC__/Images/halfround-border.png");
+            height: 9px;
+            margin-top: -8px;
+        }
+        .detail-left {
+            background : #f8f8f8;
+            display : table-cell;
+            width : 540px;
+            font-size : 1.1em;
+            color : #666;
+        }
+        .detail-left table{
+            width : 100%;
+        }
+        .detail-left table tr{
+            height : 50px;
+            line-height : 50px;
+        }
+        .detail-left table thead{
+            border-bottom : 1px solid #ddd;
+        }
+        .detail-left table td.goods-name{
+            width : 50%;
+        }
+        .detail-left table td, .detail-left table th{
+            width : 25%;
+            text-align : left;
+            padding-left : 20px;
+        }
+        .detail-left  .order-sum{
+            text-align : right;
+            line-height : 60px;
+            padding-right : 40px;
+        }
+        .detail-right {
+            display : table-cell;
+            background : #fff;
+            vertical-align: top;
+            width : 40%;
+            padding-left : 40px;
+        }
+        .detail-right p{
+            line-height : 38px;
+            height : 38px;
+            font-size : 1.1em;
+        }
+        .detail-right h3{
+            font-size : 1.1em;
+            border : none;
+        }
+        .detail-right .deliver-info , .detail-right .addr-info{
+            border-bottom : 1px dashed #eee;
+            padding: 8px 0;
+        }
+        .detail-right p label{
+            display : inline-block;
+            width : 80px;
+            text-align : right;
+            color : #888;
+        }
+        .detail-right .form-item span{
+            height : 38px;
+            line-height : 38px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="mnr-content">
+    <div class="order-detail clearfix">
+        <div class="detail-left">
+            <table>
+                <thead>
+                <tr>
+                    <th>菜品</th>
+                    <th>数量</th>
+                    <th>小计（元）</th>
+                </tr>
+                </thead>
+                <tbody class="bb1">
+                <tr>
+                    <td class="goods-name zxx_text_overflow">杨国富麻辣烫，15元经济套餐500g</td>
+                    <td>1</td>
+                    <td>15.00</td>
+                </tr>
+                <tr>
+                    <td>原味饼</td>
+                    <td>3</td>
+                    <td>6.00</td>
+                </tr>
+                <tr class="bt1">
+                    <td class="goods-name">在线支付</td>
+                    <td></td>
+                    <td class="cf33">-5.00</td>
+                </tr>
+                <tr>
+                    <td class="goods-name">飞鸟转送订单立减优惠</td>
+                    <td></td>
+                    <td class="cf33">-3.00</td>
+                </tr>
+                <tr>
+                    <td class="goods-name">餐盒费</td>
+                    <td></td>
+                    <td>2.0</td>
+                </tr>
+                <tr>
+                    <td class="goods-name">配送费</td>
+                    <td></td>
+                    <td class="cf33">4.00</td>
+                </tr>
+
+                </tbody>
+
+            </table>
+            <div class="order-sum">
+                实际支付：
+                <span class="cf33 fz24">13.00</span>
+            </div>
+        </div>
+        <div class="detail-right">
+            <h3 class="ml10">配送信息</h3>
+            <div class="deliver-info">
+                <p>
+                    <label>配送方式：</label>
+                    <span>飞鸟转送</span>
+                </p>
+                <p>
+                    <label>送达时间：</label>
+                    <span>尽快送达</span>
+                </p>
+            </div>
+            <div class="addr-info">
+                <p>
+                    <label>联系人：</label>
+                    <span>刘子楠</span>
+                </p>
+                <p>
+                    <label>联系电话：</label>
+                    <span>15053203610</span>
+                </p>
+                <p>
+                    <label>收货地址：</label>
+                    <span>辽阳2路</span>
+                </p>
+            </div>
+            <div class="other-info">
+                <p>
+                    <label>发票信息：</label>
+                    <span>无</span>
+                </p>
+                <p>
+                    <label>备注：</label>
+                    <span>少放盐，多放辣</span>
+                </p>
+            </div>
+        </div>
+        <div class="bg-img"></div>
+    </div>
+</div>
+
+</body>
+</html>
+<script>
+    $(function () {       
+		$('#backid').click(function(){
+            window.location.href="index.html";
+		 });
+    });
+</script>
