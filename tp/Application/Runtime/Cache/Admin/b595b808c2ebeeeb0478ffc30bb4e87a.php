@@ -5,12 +5,12 @@
     <meta charset="utf-8"/>
     <title>后台管理系统</title>
     <meta name="author" content="DeathGhost" />
-    <link rel="stylesheet" type="text/css" href="/Public/assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/code/tp/Public/assets/css/style.css" />
     <!--[if lt IE 9]>
-    <script src="/Public/assets/js/html5.js"></script>
+    <script src="/code/tp/Public/assets/js/html5.js"></script>
     <![endif]-->
-    <script src="/Public/assets/js/jquery.js"></script>
-    <script src="/Public/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/code/tp/Public/assets/js/jquery.js"></script>
+    <script src="/code/tp/Public/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script>
         (function($){
             $(window).load(function(){
@@ -37,7 +37,7 @@
 <body>
 <!--header-->
 <header>
-    <h1><img src="/Public/assets/images/admin_logo.png"/></h1>
+    <h1><img src="/code/tp/Public/assets/images/admin_logo.png"/></h1>
     <ul class="rt_nav">
         <li><a href="http://www.baidu.com" target="_blank" class="website_icon">站点首页</a></li>
         <li><a href="#" class="admin_icon"><?php echo ($_SESSION['username']); ?></a></li>
@@ -54,9 +54,9 @@
             <dl>
                 <dt><?php echo ($vo["title"]); ?></dt>
                 <!--当前链接则添加class:active-->
-                <?php if(is_array($vo["nodes"])): $i = 0; $__LIST__ = $vo["nodes"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$svo): $mod = ($i % 2 );++$i; if(($vo["name"] == $controller_name) and ($svo["name"] == $action_name)): ?><dd><a href="/index.php/Admin/<?php echo ($vo["name"]); ?>/<?php echo ($svo["name"]); ?>" class="active"><?php echo ($svo["title"]); ?></a></dd>
+                <?php if(is_array($vo["nodes"])): $i = 0; $__LIST__ = $vo["nodes"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$svo): $mod = ($i % 2 );++$i; if(($vo["name"] == $controller_name) and ($svo["name"] == $action_name)): ?><dd><a href="/code/tp/index.php/Admin/<?php echo ($vo["name"]); ?>/<?php echo ($svo["name"]); ?>" class="active"><?php echo ($svo["title"]); ?></a></dd>
                         <?php else: ?>
-                        <dd><a href="/index.php/Admin/<?php echo ($vo["name"]); ?>/<?php echo ($svo["name"]); ?>"><?php echo ($svo["title"]); ?></a></dd><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+                        <dd><a href="/code/tp/index.php/Admin/<?php echo ($vo["name"]); ?>/<?php echo ($svo["name"]); ?>"><?php echo ($svo["title"]); ?></a></dd><?php endif; endforeach; endif; else: echo "" ;endif; ?>
             </dl>
         </li><?php endforeach; endif; else: echo "" ;endif; ?>
         <li>
