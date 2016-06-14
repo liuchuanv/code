@@ -1,0 +1,45 @@
+<!-- 模板-->
+<include file="Public:head" />
+<include file="Public:left" />
+
+
+<section class="rt_wrap content mCustomScrollbar">
+ <div class="rt_content">
+     <!--开始：以下内容则可删除，仅为素材引用参考-->
+     <section>
+         <div class="page_title">
+             <h2 class="fl">角色列表</h2>
+         </div>
+         <table class="table">
+             <tr>
+                 <th>编号</th>
+                 <th>角色名称</th>
+                 <th>开启状态</th>
+                 <th>描述</th>
+                 <th>更新时间</th>
+                 <th>操作</th>
+             </tr>
+             <volist name="list" id="vo">
+             <tr>
+                 <td>{$vo.id}</td>
+                 <td>{$vo.name}</td>
+                 <td>{$vo.status}</td>
+                 <td style="width:265px;"><div class="cut_title ellipsis">{$vo.remark}</div></td>
+                 <td>{$vo.create_time}</td>
+                 <td>
+                     <a href="__APP__/Admin/Rbac/addRole?id={$vo.id}">编辑</a>
+                     <a href="__APP__/Admin/Rbac/accessList?rid={$vo.id}">配置权限</a>
+                 </td>
+             </tr>
+             </volist>
+         </table>
+
+         <aside class="paging">
+             {$page}
+         </aside>
+     </section>
+     <!--结束：以下内容则可删除，仅为素材引用参考-->
+ </div>
+</section>
+
+<include file="Public:foot" />

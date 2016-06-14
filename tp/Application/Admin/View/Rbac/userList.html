@@ -1,0 +1,58 @@
+<!-- 模板-->
+<include file="Public:head" />
+<include file="Public:left" />
+
+
+<section class="rt_wrap content mCustomScrollbar">
+ <div class="rt_content">
+     <!--开始：以下内容则可删除，仅为素材引用参考-->
+     <section>
+         <div class="page_title">
+             <h2 class="fl">用户列表</h2>
+         </div>
+         <table class="table">
+             <tr>
+                 <th>编号</th>
+                 <th>用户名</th>
+                 <th>邮箱</th>
+                 <th>角色</th>
+                 <th>开启状态</th>
+                 <th>备注</th>
+                 <th>上次登录IP</th>
+                 <th>上次登录时间</th>
+                 <th>注册时间</th>
+                 <th>操作</th>
+             </tr>
+             <volist name="list" id="vo">
+             <tr>
+                 <td>{$vo.id}</td>
+                 <td>{$vo.username}</td>
+                 <td>{$vo.email}</td>
+                 <td>
+                     <volist name="vo.Role" id="rvo">
+                         【{$rvo.name}】
+                     </volist>
+                 </td>
+                 <td><empty name="vo.status"><span class="c-red">未开启</span><else /><span class="c-green">开启</span></empty></td>
+                 <td style="width:265px;"><div class="cut_title ellipsis">{$vo.remark}</div></td>
+                 <td>{$vo.login_ip}</td>
+                 <td>{$vo.login_time}</td>
+                 <td>{$vo.create_time}</td>
+                 <td>
+                     <a href="__APP__/Admin/Rbac/addUser?id={$vo.id}">编辑</a>
+                     <a href="__APP__/Admin/Rbac/resumeUserHandler?id={$vo.id}"><empty name="vo.status"><span class="c-red">开启</span><else />锁定</empty></a>
+                     <a href="__APP__/Admin/Rbac/deleteUserHandler?id={$vo.id}">删除</a>
+                 </td>
+             </tr>
+             </volist>
+         </table>
+
+         <aside class="paging">
+             {$page}
+         </aside>
+     </section>
+     <!--结束：以下内容则可删除，仅为素材引用参考-->
+ </div>
+</section>
+
+<include file="Public:foot" />

@@ -1,0 +1,57 @@
+<!-- 模板-->
+<include file="Public:head" />
+<include file="Public:left" />
+
+
+<section class="rt_wrap content mCustomScrollbar">
+ <div class="rt_content">
+     <!--开始：以下内容则可删除，仅为素材引用参考-->
+     <section>
+         <h2><strong style="color:grey;">编辑用户</strong></h2>
+         <ul class="ulColumn2">
+             <form action="__APP__/Admin/Rbac/addUserHandler" method="post" autocomplete=off>
+                 <input type="hidden" name="id" value="{$item.id}" />
+                 <li>
+                     <span class="item_name" style="width:120px;">用户名：</span>
+                     <input type="text" class="textbox textbox_225" name="username" value="{$item.username}"/>
+                 </li>
+                 <li>
+                     <span class="item_name" style="width:120px;">密码：</span>
+                     <input type="password" class="textbox textbox_225" name="password"/>
+                 </li>
+                 <li>
+                     <span class="item_name" style="width:120px;">邮箱：</span>
+                     <input type="text" class="textbox textbox_225" name="title" value="{$item.email}"/>
+                 </li>
+                 <li>
+                     <span class="item_name" style="width:120px;">是否启用：</span>
+                     <label class="single_selection"><input type="radio" name="status" value="1" checked/>启用</label>
+                     <label class="single_selection"><input type="radio" name="status" value="0" <eq name="item.status" value="0">checked</eq>/>禁用</label>
+
+                 </li>
+                 <li>
+                     <span class="item_name" style="width:120px;">角色：</span>
+                     <select class="select textbox_100" name="role_id" style="width:100px">
+                         <option>选择角色</option>
+                        <volist name="roleList" id="vo">
+                            <option value="{$vo.id}">{$vo.name}</option>
+                        </volist>
+                     </select>
+                 </li>
+
+                 <li>
+                     <span class="item_name" style="width:120px;">描述：</span>
+                     <input type="text" class="textbox textbox_225" name="remark" value="{$item.remark}"/>
+                 </li>
+                 <li>
+                     <span class="item_name" style="width:120px;"></span>
+                     <input type="submit" class="link_btn" value="保存"/>
+                 </li>
+             </form>
+         </ul>
+     </section>
+     <!--结束：以下内容则可删除，仅为素材引用参考-->
+ </div>
+</section>
+
+<include file="Public:foot" />

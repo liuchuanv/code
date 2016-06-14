@@ -1,0 +1,38 @@
+<!-- 模板-->
+<include file="Public:head" />
+<include file="Public:left" />
+
+
+<section class="rt_wrap content mCustomScrollbar">
+ <div class="rt_content">
+     <!--开始：以下内容则可删除，仅为素材引用参考-->
+     <section>
+         <h2><strong style="color:grey;">编辑角色</strong></h2>
+         <ul class="ulColumn2">
+             <form action="__APP__/Admin/Rbac/addRoleHandler" method="post">
+                 <input type="hidden" name="id" value="{$item.id}" />
+                 <li>
+                     <span class="item_name" style="width:120px;">角色名称：</span>
+                     <input type="text" class="textbox textbox_225" name="name" value="{$item.name}"/>
+                 </li>
+                 <li>
+                     <span class="item_name" style="width:120px;">描述：</span>
+                     <input type="text" class="textbox textbox_225" name="remark" value="{$item.remark}"/>
+                 </li>
+                 <li>
+                     <span class="item_name" style="width:120px;">是否启用：</span>
+                     <label class="single_selection"><input type="radio" name="status" value="1" <notempty name="item.status">checked</notempty>/>启用</label>
+                     <label class="single_selection"><input type="radio" name="status" value="0" <empty name="item.status">checked</empty>/>禁用</label>
+                 </li>
+                 <li>
+                     <span class="item_name" style="width:120px;"></span>
+                     <input type="submit" class="link_btn" value="保存"/>
+                 </li>
+             </form>
+         </ul>
+     </section>
+     <!--结束：以下内容则可删除，仅为素材引用参考-->
+ </div>
+</section>
+
+<include file="Public:foot" />

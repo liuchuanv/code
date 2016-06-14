@@ -1,0 +1,45 @@
+<!-- 模板-->
+<include file="Public:head" />
+<include file="Public:left" />
+
+
+<section class="rt_wrap content mCustomScrollbar">
+ <div class="rt_content">
+     <!--开始：以下内容则可删除，仅为素材引用参考-->
+     <section>
+         <div class="page_title">
+             <h2 class="fl">节点列表</h2>
+         </div>
+         <table class="table">
+             <tr>
+                 <th>权限id--权限排序</th>
+                 <th>中文名称</th>
+                 <th>英文名称</th>
+                 <th>类型</th>
+                 <th>描述</th>
+                 <th>操作</th>
+             </tr>
+             <volist name="list" id="vo">
+             <tr>
+                 <td>{$vo.id}--{$vo.sort}</td>
+                 <td style="text-align:left;text-indent:{$vo['level']*20-20}px">|- {$vo.title}</td>
+                 <td>{$vo.name}</td>
+                 <td class="c-{$vo.type}"><if condition="($vo.type eq 1)">项目<elseif condition="($vo.type eq 2)"/>模块<elseif condition="($vo.type eq 3)"/>操作<elseif condition="($vo.type eq 4)"/>功能</if></td>
+                 <td style="width:265px;"><div class="cut_title ellipsis">{$vo.remark}</div></td>
+                 <td>
+                     <a href="__APP__/Admin/Rbac/addNode?id={$vo.id}">编辑</a>
+                     <a href="__APP__/Admin/Rbac/deleteNodeHandler?id={$vo.id}">删除</a>
+                 </td>
+             </tr>
+             </volist>
+         </table>
+
+         <aside class="paging">
+             {$page}
+         </aside>
+     </section>
+     <!--结束：以下内容则可删除，仅为素材引用参考-->
+ </div>
+</section>
+
+<include file="Public:foot" />
