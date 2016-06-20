@@ -31,18 +31,7 @@ $(function () {
 	//
 	var timer, forceStop;
 	var wxch_Marquee = function (id) {
-		try {
-			//解决图片闪烁的问题
-			var browser=new Object();
-			browser.name=navigator.appName; 
-			if(browser.name.indexOf("Microsoft")!=-1){ 
-				browser.version=navigator.appVersion.indexOf("MISE");
-				browser.version=parseInt(navigator.appVersion.substring(browser.version+4));
-				if(browser.version<=6){
-					document.execCommand("BackgroundImageCache",false,true);
-				}
-			}
-		} catch (e) {};
+
 		var container = document.getElementById(id),
 			original = container.getElementsByTagName("dt")[0],
 			clone = container.getElementsByTagName("dd")[0],
